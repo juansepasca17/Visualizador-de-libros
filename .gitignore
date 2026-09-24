@@ -1,0 +1,7 @@
+node_modules/
+out/
+dist/
+src/renderer/public/pdfjs/
+*.pdf
+*.log
+.DS_Store

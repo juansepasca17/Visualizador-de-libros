@@ -1,0 +1,38 @@
+{
+  "name": "biblioteca-pdf",
+  "version": "1.0.1",
+  "description": "Biblioteca de escritorio para tus PDFs con portadas automáticas",
+  "main": "./out/main/index.js",
+  "private": true,
+  "scripts": {
+    "copy-pdfjs": "node scripts/copy-pdfjs.mjs",
+    "predev": "npm run copy-pdfjs",
+    "dev": "electron-vite dev",
+    "prebuild": "npm run copy-pdfjs",
+    "build": "electron-vite build",
+    "start": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "build:win": "npm run build && electron-builder --win"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "electron": "^44.4.5",
+    "electron-builder": "^26.15.3",
+    "electron-vite": "^5.0.0",
+    "pdfjs-dist": "^6.3.289",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-virtuoso": "^4.18.15",
+    "typescript": "^7.0.2",
+    "vite": "^7.3.6"
+  },
+  "license": "MIT",
+  "author": "juansepasca17",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juansepasca17/Visualizador-de-libros.git"
+  }
+}
