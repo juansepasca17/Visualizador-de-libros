@@ -52,7 +52,7 @@ npm install
 npm run dev        # abrir en modo desarrollo
 npm run build:win  # crear el instalador en dist/
 ```
-
+Este Repo es Creado usando Claude Code.
 Hecha con Electron, React y TypeScript (electron-vite), [pdf.js](https://mozilla.github.io/pdf.js/) para leer los
 PDFs, react-virtuoso para la cuadrícula y electron-builder para el instalador.
 
